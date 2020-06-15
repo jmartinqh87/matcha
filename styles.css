@@ -1,4 +1,3 @@
-
 body {
   background-color: #fffbf7;
   margin: 0px;
@@ -248,4 +247,54 @@ main {
 .features .feature-card .feature-image img {
   margin-top: 0;
   height: 100%;
+}
+
+
+@media (max-width: 425px) {
+  .navbar,
+  .actions {
+    display: none;
+  }
+
+  .main h1 {
+    font-size: 2rem;
+  }
+
+  .fixed-header .header .logo {
+    padding: 0 0 0 15px;
+  }
+
+  .banner > img {
+    width: 100%;
+  }
+
+  .publish > form {
+    flex-direction: column;
+  }
+
+  .publish > form > div {
+    height: 70%;
+    margin-top: 15px;
+  }
+
+  .publish > form > div > input {
+    width: 60%;
+  }
+
+  .promo {
+    flex-direction: column;
+  }
+
+  .promo .explanatory-video > video {
+    width: 80%;
+  }
+
+  .promo .explanatory-video img {
+    display: none;
+  }
+
+  .features {
+    grid-template: repeat(4, 400px) / 1fr;
+  }
+
 }
